@@ -1,0 +1,97 @@
+// Banner section start
+#banner {
+  .banner_item {
+    padding-bottom: 100px;
+    .banner_slider {
+      height: 800px;
+      background-size: cover;
+      background-position: center;
+      h6 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: $lightColor;
+        margin-top: 245px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 74px;
+        color: $lightColor;
+        margin: 30px 0 25px 0;
+      }
+      p {
+        line-height: 28px;
+        width: 412px;
+        color: $lightColor;
+        margin-bottom: 36px;
+      }
+      button {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        background: $praimaryColor;
+        border: none;
+        padding: 19px 43px;
+        color: $lightColor;
+        transition: 0.5s;
+        &:hover {
+          background: $lightColor;
+          color: $praimaryColor;
+        }
+        span {
+          display: inline-block;
+          padding-left: 10px;
+        }
+      }
+    }
+    .banner_slider2 {
+      h6 {
+        color: $TextColor;
+      }
+      h1 {
+        color: $TextColor;
+      }
+      p {
+        color: $TextColor;
+      }
+      button {
+        background: $TextColor;
+      }
+    }
+  }
+}
+// #banner2 {
+//   .banner2img {
+//     position: relative;
+//     .banner2-img-overlay {
+//         position: absolute;
+//         background: rgba(68, 68, 68,0.85);
+//         inset: 0 0;
+//       h3 {
+//         font-weight: 700;
+//         font-size: 30px;
+//         line-height: 40px;
+//         color: $lightColor;
+//       }
+//       a {
+//         font-weight: 600;
+//         font-size: 16px;
+//         line-height: 28px;
+//         color: $lightColor;
+//       }
+//     }
+//   }
+// }
+// Banner section end
+
+// New Arrivals Products section start
+#nap {
+  padding: 100px 0;
+}
+.nap_slider_item {
+  @extend %product_style;
+  }
+
+//  New Arrivals Products section end

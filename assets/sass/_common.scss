@@ -1,0 +1,141 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: $primaryFont;
+  font-weight: 700;
+}
+h5,
+h6 {
+  font-family: $primaryFont;
+  font-weight: 600;
+}
+p {
+  font-family: $secoundryFont;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+span,
+small {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: $TextColor;
+  text-align: center;
+}
+
+%product_style {
+  position: relative;
+  border: 1px solid $bgColor;
+  overflow: hidden;
+  .nap_slider_item_img img:last-child {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &:hover .nap_slider_item img:last-child {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .nap_product_info ins {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $ParagraphColor;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .nap_product_info del {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #bdbdbd;
+  }
+  .nap_product_info h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $TextColor;
+    transition: .5s;
+    &:hover{
+      color: $praimaryColor;
+    }
+  }
+  .faStar {
+    font-size: 10px;
+    color: $praimaryColor;
+  }
+  .product_badge_overlay {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: $praimaryColor;
+    transform: rotate(-90deg);
+    padding: 8px;
+    width: 70px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    opacity: 999;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: $lightColor;
+    }
+  }
+  .product_icon_overlay {
+    position: absolute;
+    top: 39px;
+    right: -50px;
+    transition: 0.5s;
+    ul li a {
+      // position: absolute;
+      display: inline-block;
+      font-size: 16px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      color: $PrimaryColor3;
+      background-color: $lightColor;
+      border-radius: 50%;
+      margin: 5px 0;
+      transition: 0.5s;
+      box-shadow: $shadow1;
+      &:hover {
+        color: $lightColor;
+        background: $praimaryColor;
+        box-shadow: none;
+      }
+      .custom-tooltip {
+        background: red;
+      }
+    }
+  }
+  &:hover .product_icon_overlay {
+    right: 17px;
+  }
+}
